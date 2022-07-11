@@ -158,6 +158,7 @@ int main() {
             phone->sms();
         }
 
-     } while (op != "exit");
+    } while (op != "exit");
+    delete phone;
     return 0;
 }
