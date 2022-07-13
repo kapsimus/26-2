@@ -1,8 +1,13 @@
-//
-// Created by avz on 13.07.2022.
-//
+#pragma once
 
-#ifndef INC_26_2_PHONE_H
-#define INC_26_2_PHONE_H
+class Phone {
+    std::vector<Contact> phoneBook;
 
-#endif //INC_26_2_PHONE_H
+public:
+    void add();
+    void call();
+    void sms();
+private:
+    static bool isPhoneNumber(const std::string& str);
+    static void writeSMS(std::string& message);
+};

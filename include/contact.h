@@ -1,8 +1,15 @@
-//
-// Created by avz on 13.07.2022.
-//
+#include <iostream>
+#pragma once
 
-#ifndef INC_26_2_CONTACT_H
-#define INC_26_2_CONTACT_H
+class Contact {
+    std::string name;
+    std::string number;
 
-#endif //INC_26_2_CONTACT_H
+public:
+    Contact();
+    Contact(const std::string& contactName, const std::string& contactNumber);
+    bool setName(const std::string& contactName);
+    bool setNumber(const std::string& contactNumber);
+    std::string& getName();
+    std::string& getNumber();
+};
